@@ -17,6 +17,8 @@ async function weatherInfo(value){
         const api_key = "54301ca76f4c8bbafcc24354407f8ab3";
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${api_key}`;
 
+    loc_name.innerHTML = `${value}`;
+
         const weather_data = await fetch(`${url}`).then(res => res.json());
        
         temp.innerHTML = `${Math.round(weather_data.main.temp - 273.15)}°C`;
