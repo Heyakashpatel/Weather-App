@@ -11,6 +11,13 @@
   width: 100%;
 }
 
+.top-sec p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
 .input-box {
   width: 90%;
 }
@@ -220,5 +227,9 @@ input:checked + .slider:before {
 
 .input-box.active {
   background: #3a3974;
+  color: #e1e1e1;
+}
+
+.loc-name.active {
   color: #e1e1e1;
 }
