@@ -12,6 +12,12 @@
   width: 100%;
 }
 
+.top-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .top-sec p {
   margin: 0;
   font-size: 18px;
