@@ -1,9 +1,8 @@
 .app-box {
   background: #9a9edc;
-  height: 65vh;
+  height: 70vh;
   border-radius: 6px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(163, 220, 154, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
