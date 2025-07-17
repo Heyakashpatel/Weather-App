@@ -225,6 +225,7 @@ input:checked + .slider:before {
 
 .app-box.active {
   background: #1b1b32;
+  color: #e1e1e1;
 }
 
 .temp-info-main.active {
@@ -242,6 +243,3 @@ input:checked + .slider:before {
   color: #e1e1e1;
 }
 
-.loc-name.active {
-  color: #e1e1e1;
-}
