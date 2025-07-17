@@ -4,7 +4,6 @@ const temp = document.querySelector('.temp');
 const wind = document.querySelector('.wind');
 const humid = document.querySelector('.humid');
 const desc = document.querySelector('.desc');
-const loc_name = document.querySelector('.loc-name');
 const weather_img = document.querySelector('.weath-img');
 
 
@@ -71,7 +70,6 @@ const checkbox = document.getElementById('toggle-checkbox');
     temp_info_main.classList.toggle('active', this.checked);
     additional_info.classList.toggle('active', this.checked);
     input_info.classList.toggle('active', this.checked);
-      loc_name.classList.toggle('active', this.checked);
   });
 
 
