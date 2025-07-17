@@ -4,6 +4,7 @@ const temp = document.querySelector('.temp');
 const wind = document.querySelector('.wind');
 const humid = document.querySelector('.humid');
 const desc = document.querySelector('.desc');
+const loc_name = document.querySelector('.loc-name');
 const weather_img = document.querySelector('.weath-img');
 
 
