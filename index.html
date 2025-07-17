@@ -31,12 +31,22 @@
         </div>
         <div class="header">
           <div class="search-box">
-            <input
+<!--             <input
               class="input-box"
               id="input-box"
               type="text"
               placeholder="Enter Your City"
+            /> -->
+            
+            <input
+              type="text"
+              class="input-box"
+              placeholder="Enter city name"
+              autocomplete="off"
             />
+            <ul id="suggestions" class="suggestions-list"></ul>
+
+            
             <button class="btn">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
