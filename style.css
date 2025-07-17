@@ -243,3 +243,18 @@ input:checked + .slider:before {
   color: #e1e1e1;
 }
 
+
+/*  Responsive */
+
+@media screen and (max-width: 600px){
+  .app-box {
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+}
+
+
+
+
+
