@@ -69,6 +69,7 @@
 }
 
 .search-box {
+  position: relative;
   display: flex;
   gap: 10px;
 }
@@ -254,6 +255,33 @@ input:checked + .slider:before {
   height: 80%;
 }
 }
+
+
+
+/* Search Suggestion */
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background: #ccc;
+  width: 100%;
+  overflow-y: auto;
+  z-index: 10;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 50px;
+}
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* .suggestions-list li:hover {
+  background-color: #eee;
+} */
 
 
 
