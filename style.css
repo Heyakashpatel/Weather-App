@@ -160,6 +160,15 @@
   padding: 16px;
 }
 
+.suggestions-list {
+  color: #3a3974;
+}
+
+.input-box::placeholder {
+  color: #3a3974;
+}
+
+
 /* night mode toggler */
 
 .switch {
