@@ -18,6 +18,12 @@
   align-items: center;
 }
 
+.loc-main {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .top-sec p {
   margin: 0;
   font-size: 18px;
