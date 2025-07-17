@@ -74,3 +74,38 @@ const checkbox = document.getElementById('toggle-checkbox');
   });
 
 
+
+ // Search Suggestions js
+
+const api_key = "54301ca76f4c8bbafcc24354407f8ab3";
+
+const suggestionsBox = document.getElementById('suggestions');
+
+input_box.addEventListener('input', async function () {
+  const query = input_box.value.trim();
+
+  if (query.length < 2) {
+    suggestionsBox.innerHTML = '';
+    return;
+  }
+
+  const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${api_key}`;
+  const locations = await fetch(geoUrl).then(res => res.json());
+
+  suggestionsBox.innerHTML = '';
+
+  locations.forEach(loc => {
+    const item = document.createElement('li');
+    item.textContent = `${loc.name}, ${loc.country}`;
+
+    item.addEventListener('click', () => {
+      input_box.value = `${loc.name}`;
+      weatherInfo(loc.name); // Call your weather function (must be defined)
+      suggestionsBox.innerHTML = '';
+    });
+
+    suggestionsBox.appendChild(item);
+  });
+});
+
+
