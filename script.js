@@ -10,6 +10,7 @@ const weather_img = document.querySelector('.weath-img');
 
 search_btn.addEventListener('click', ()=>{
     weatherInfo(input_box.value);
+    suggestionsBox.innerHTML = '';
 });
 
 
