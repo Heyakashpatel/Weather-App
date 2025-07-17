@@ -1,6 +1,6 @@
 .app-box {
   background: #9a9edc;
-  height: 70vh;
+  height: auto;
   border-radius: 6px;
   padding: 20px;
   display: flex;
@@ -9,6 +9,7 @@
   max-width: 350px;
   min-width: 350px;
   width: 100%;
+  gap: 50px;
 }
 
 .top-sec {
@@ -91,7 +92,7 @@
 .weather-body {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 }
 
 .weather-body .temp {
