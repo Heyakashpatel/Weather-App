@@ -93,11 +93,18 @@ input_box.addEventListener('input', async function () {
   const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${query}&limit=5&appid=${api_key}`;
   const locations = await fetch(geoUrl).then(res => res.json());
 
+     // Create a Set to keep track of unique location keys (name + country)
+  const seen = new Set();
+
   suggestionsBox.innerHTML = '';
 
   locations.forEach(loc => {
+    const key = `${loc.name},${loc.country}`;
+          // Only add to suggestions if key not seen before
+    if (!seen.has(key)) {
+      seen.add(key);
     const item = document.createElement('li');
-    item.textContent = `${loc.name}, ${loc.country}`;
+    item.textContent = key;
 
     item.addEventListener('click', () => {
       input_box.value = `${loc.name}`;
